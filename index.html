@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="" type="image/x-icon">
+    <title>ShopJS</title>
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="shipping-modal">
+        <div class="shipping-box">
+            <h1>배송정보</h1>
+            <div class="input-info">
+                <h2>이름</h2>
+                <input type="text" id="name">
+            </div>
+            <div class="input-info">
+                <h2>연락처</h2>
+                <input type="text" id="phone">
+            </div>
+            <div class="input-info">
+                <button type="button" class="btn btn-dark submit-info">입력완료</button>
+                <button type="button" class="btn btn-dark close-modal">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="canvas-box">
+        <div class="canvas-content">
+            <div class="canvas-header">
+                <h2></h2> 
+            </div>
+            <div class="canvas-body">
+                <canvas id="canvas" width="300"></canvas>
+            </div>
+            <div class="canvas-footer">
+                <button class="btn btn-dark canvas-close">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="header">
+            <div class="header-web">
+                <div class="header-left">
+                    <div class="header-title">
+                        <p>집꾸미기</p>
+                    </div>
+                    <ul class="header-list">
+                        <li>Home</li>
+                        <li>스토어</li>
+                        <li>시공견적</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-app">
+                <div class="header-title">
+                    <p>집꾸미기</p>
+                </div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="shop-content">
+            <div class="search-bar">
+                <input class='input-box' type="text" placeholder="검색어 입력">
+            </div>
+            <div class="item-list row">
+            </div>
+            <div class="cart">
+                <h1 class="cart-text">장바구니</h1>
+                <div class="cart-items row">
+                    <h1 class="cart-box-text">여기로 드래그</h1>
+                </div>
+            </div>
+        </div>
+        <div class="order-box">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="./shop.js"></script>
+</body>
+
+</html>
